@@ -247,6 +247,7 @@ class RestClient
      */
     public function createRequest(array $config)
     {
+        sleep(0.25);
         return new RestRequest($this->getRequestConfig($config));
     }
 
